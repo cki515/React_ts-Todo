@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./src", // baseUrl
+    "paths": {
+      // path alias 설정
+      "@src/*": ["src/*"], // src path 설정
+      "@styles/*": ["src/styles/*"], // src/styles path 설정
+      "@utils/*": ["src/utils/*"], // src/utils path 설정
+      "@hooks/*": ["src/hooks/*"], // src/hooks path 설정
+      "@components/*": ["src/components/*"] // src/components path 설정
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
